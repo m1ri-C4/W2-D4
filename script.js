@@ -2,197 +2,91 @@
 REGOLE
 - Le risposte vanno scritte in JavaScript sotto ogni commento.
 - Puoi testare aprendo index.html nel browser e guardando la console (DevTools).
-- L'array starWarsCharacters è già preparato qui sotto: NON modificarlo a inizio file.
 - Cerca solo cose non viste a lezione. Tutto il necessario è già stato spiegato stamattina.
 */
 
-const starWarsCharacters = [
-	{
-		name: 'Luke Skywalker',
-		height: '172',
-		mass: '77',
-		hair_color: 'blond',
-		skin_color: 'fair',
-		eye_color: 'blue',
-		birth_year: '19BBY',
-		gender: 'male',
-	},
-	{
-		name: 'C-3PO',
-		height: '167',
-		mass: '750',
-		hair_color: 'n/a',
-		skin_color: 'gold',
-		eye_color: 'yellow',
-		birth_year: '112BBY',
-		gender: 'n/a',
-	},
-	{
-		name: 'R2-D2',
-		height: '96',
-		mass: '32',
-		hair_color: 'n/a',
-		skin_color: 'white, blue',
-		eye_color: 'red',
-		birth_year: '33BBY',
-		gender: 'n/a',
-	},
-	{
-		name: 'Darth Vader',
-		height: '202',
-		mass: '136',
-		hair_color: 'none',
-		skin_color: 'white',
-		eye_color: 'yellow',
-		birth_year: '41.9BBY',
-		gender: 'male',
-	},
-	{
-		name: 'Leia Organa',
-		height: '150',
-		mass: '49',
-		hair_color: 'brown',
-		skin_color: 'light',
-		eye_color: 'brown',
-		birth_year: '19BBY',
-		gender: 'female',
-	},
-	{
-		name: 'Owen Lars',
-		height: '178',
-		mass: '120',
-		hair_color: 'brown, grey',
-		skin_color: 'light',
-		eye_color: 'blue',
-		birth_year: '52BBY',
-		gender: 'male',
-	},
-	{
-		name: 'Beru Lars',
-		height: '165',
-		mass: '75',
-		hair_color: 'brown',
-		skin_color: 'light',
-		eye_color: 'blue',
-		birth_year: '47BBY',
-		gender: 'female',
-	},
-	{
-		name: 'R5-D4',
-		height: '97',
-		mass: '32',
-		hair_color: 'n/a',
-		skin_color: 'white, red',
-		eye_color: 'red',
-		birth_year: 'unknown',
-		gender: 'n/a',
-	},
-	{
-		name: 'Biggs Darklighter',
-		height: '183',
-		mass: '84',
-		hair_color: 'black',
-		skin_color: 'light',
-		eye_color: 'brown',
-		birth_year: '24BBY',
-		gender: 'male',
-	},
-	{
-		name: 'Obi-Wan Kenobi',
-		height: '182',
-		mass: '77',
-		hair_color: 'auburn, white',
-		skin_color: 'fair',
-		eye_color: 'blue-gray',
-		birth_year: '57BBY',
-		gender: 'male',
-	},
-];
-
-/* ESERCIZIO 1 — Estrai i nomi
-   Array vuoto "nomi". Con un for, fai push di ogni starWarsCharacters[i].name.
-   Stampa "nomi".
+/* ESERCIZIO 1 — area
+   Funzione area(l1, l2) che ritorna l1 * l2.
+   Stampa area(3, 4).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 2 — Solo i femminili
-   Array vuoto "personaggiFemminili". Con un for + if (gender === "female"),
-   crea un nuovo oggetto { name, hair_color, eye_color } e fai push.
-   Stampa.
+/* ESERCIZIO 2 — sommaPazza
+   Funzione sommaPazza(a, b): ritorna a + b.
+   Se a === b: ritorna (a + b) * 3.
+   Prova con (2, 3) e (4, 4).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 3 — Oggetto raggruppamento
-   Crea perColoreOcchi con chiavi: blue, yellow, brown, red, blue-gray (con trattino).
-   Ognuna con un array vuoto.
+/* ESERCIZIO 3 — distanzaDa19
+   Funzione distanzaDa19(n): ritorna Math.abs(n - 19).
+   Se n > 19: ritorna distanza * 3.
+   Prova con 5 e 25.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 4 — Raggruppa per colore degli occhi
-   For su starWarsCharacters + switch (character.eye_color).
-   In ogni case fai push del personaggio nell'array giusto. Ricorda break.
-   Stampa perColoreOcchi.
+/* ESERCIZIO 4 — dentroIntervallo
+   Funzione dentroIntervallo(n):
+   true se n è tra 20 e 100 (compresi) oppure è esattamente 400.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 5 — Massa totale dell'equipaggio (while)
-   i = 0, massaTotale = 0.
-   While: somma Number(starWarsCharacters[i].mass).
-   Stampa la massa totale.
+/* ESERCIZIO 5 — epify
+   Funzione epify(testo): aggiunge "EPICODE " davanti.
+   Se il testo comincia già con "EPICODE", lo lascia invariato.
+   Usa startsWith.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 6 — Classifica il carico
-   Su massaTotale, switch (true) o if/else if:
-   < 500            → "Carico leggero"
-   500 – 700        → "Carico medio"
-   700 – 900        → "Attenzione: oltre 700"
-   900 – 1000       → "Carico critico"
-   > 1000           → "PERICOLO: sovraccarico"
+/* ESERCIZIO 6 — divisibilePer3o7
+   Funzione divisibilePer3o7(n): true se n positivo E divisibile per 3 O per 7.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 7 — Robotizza i n/a
-   For: per ogni personaggio con gender === "n/a", cambialo in "robot".
-   Stampa l'array.
+/* ESERCIZIO 7 — invertiStringa
+   Funzione invertiStringa(testo): ritorna la stringa invertita.
+   Vincolo: niente .reverse() di array.
+   Suggerimento: split("") + for al contrario + join("").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 8 — Più alto e più basso
-   For su starWarsCharacters. Trova il personaggio con altezza maggiore e quello con altezza minore.
-   L'altezza è una stringa: convertila con Number().
-   Stampa: "Più alto: Darth Vader (202 cm)" e "Più basso: ...".
+/* ESERCIZIO 8 — inizialiMaiuscole
+   Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
+   "ciao mondo" → "Ciao Mondo".
+   Suggerimento: split(" ") + for + slice(0,1).toUpperCase() + slice(1) + join(" ").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 9 — Rimuovi i femminili dai nomi (cicli annidati)
-   Sull'array "nomi" dell'esercizio 1: for esterno su nomi, for interno su personaggiFemminili.
-   Quando combaciano per nome, rimuovi quel nome da nomi con splice.
-   Stampa lunghezza prima e dopo.
+/* ESERCIZIO 9 — togliPrimoEUltimo
+   Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
+   Usa slice. Prova con "EPICODE".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* ESERCIZIO 10 — Personaggio casuale
-   indice = Math.floor(Math.random() * starWarsCharacters.length)
-   personaggio = starWarsCharacters[indice]
-   if/else su gender per stampare "Lei è alta X cm" o "Lui è alto X cm".
-   if su hair_color !== "n/a" && hair_color !== "none": stampa "Capelli: X" o "Senza capelli".
+/* ESERCIZIO 10 — dammiCasuali
+   Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
+   Usa Math.random e Math.floor.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-/* --EXTRA-- ESERCIZIO 11 — Conta per colore di occhi
-   For...in sulle chiavi di perColoreOcchi.
-   Stampa: "blue: 4 personaggi", "yellow: 2 personaggi", ecc.
+/* --EXTRA-- ESERCIZIO 11 — etaInGiorni
+   Funzione etaInGiorni(annoNascita, meseNascita, giornoNascita).
+   Ritorna l'età in giorni rispetto a oggi.
+   - new Date() per oggi
+   - new Date(anno, mese - 1, giorno) per la nascita (mese 0-based!)
+   - oggi - nascita = millisecondi
+   - dividi per 1000 * 60 * 60 * 24 e Math.floor per i giorni interi
+   Stampa: "Hai X giorni!"
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
