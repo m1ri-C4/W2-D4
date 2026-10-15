@@ -128,8 +128,8 @@ function inizialiMaiuscole(frase = '') {
    const maiuscole = [];
 
    for (let i = 0; i < myInitialArray.length; i++) {
-      maiuscole.push(myInitialArray[i].slice(0, 1).toUpperCase() 
-      + myInitialArray[i].slice(1));
+      maiuscole.push(myInitialArray[i].slice(0, 1).toUpperCase()
+         + myInitialArray[i].slice(1));
    }
    return maiuscole.join(" ");
 }
@@ -141,6 +141,19 @@ console.log(inizialiMaiuscole('ciao mondo'));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function togliPrimoEUltimo(testo = '') {
+   const myTogliArray = testo.split(" ");
+   const togli = [];
+
+   for (let i = 0; i < myTogliArray.length; i++) {
+      togli.push(myTogliArray[i].slice(1, 1)
+         + myTogliArray[i].slice(1, -1));
+   }
+   return togli.join(" ")
+}
+console.log(togliPrimoEUltimo('appositamente'));
+
+
 
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
@@ -148,6 +161,10 @@ console.log(inizialiMaiuscole('ciao mondo'));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function dammiCasuali(n) {
+   return Math.floor(Math.random() * n);
+}
+console.log(dammiCasuali(11));
 
 /* --EXTRA-- ESERCIZIO 11 — etaInGiorni
    Funzione etaInGiorni(annoNascita, meseNascita, giornoNascita).
