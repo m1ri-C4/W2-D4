@@ -11,14 +11,28 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function area(l1, l2) {
+   return l1 * l2;
+}
+
+console.log(area(3, 4));
 
 /* ESERCIZIO 2 — sommaPazza
-   Funzione sommaPazza(a, b): ritorna a + b.
+   Funzione s: ritorna a + b.
    Se a === b: ritorna (a + b) * 3.
    Prova con (2, 3) e (4, 4).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function s(a, b) {
+   if (a === b) {
+      return (a + b) * 3;
+   }
+   return a + b;
+}
+
+console.log(s(7, 3));
+console.log(s(5, 5));
 
 /* ESERCIZIO 3 — distanzaDa19
    Funzione distanzaDa19(n): ritorna Math.abs(n - 19).
@@ -27,6 +41,16 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function distanza(n) {
+   const distanzaDa19 = Math.abs(n - 19);
+
+   if (n > 19) {
+      return distanzaDa19 * 3;
+   }
+   return distanzaDa19;
+}
+console.log(distanza(7));
+console.log(distanza(35));
 
 /* ESERCIZIO 4 — dentroIntervallo
    Funzione dentroIntervallo(n):
@@ -34,6 +58,14 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function dentroIntervallo(n) {
+   if ((n >= 20 && n <= 100)|| n === 400) {
+      return true;
+   } 
+   return false;
+}
+
+console.log(dentroIntervallo(45));
 
 /* ESERCIZIO 5 — epify
    Funzione epify(testo): aggiunge "EPICODE " davanti.
