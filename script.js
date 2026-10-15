@@ -105,6 +105,15 @@ console.log(divisione(7));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function invertiStringa(testo = '') {
+   const myStringArray = testo.split("");
+   const inverse = []; // serve per inserire la stringa invertita
+   for (let i = myStringArray.length - 1; i >= 0; i--) {
+      inverse.push(myStringArray[i]);
+   }
+   return inverse.join("")
+}
+console.log(invertiStringa('ragionare'));
 
 /* ESERCIZIO 8 — inizialiMaiuscole
    Funzione inizialiMaiuscole(frase): metti in maiuscolo la prima lettera di ogni parola.
@@ -113,6 +122,9 @@ console.log(divisione(7));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function inizialiMaiuscole(frase = '') {
+
+}
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
