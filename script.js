@@ -108,6 +108,7 @@ console.log(divisione(7));
 function invertiStringa(testo = '') {
    const myStringArray = testo.split("");
    const inverse = []; // serve per inserire la stringa invertita
+
    for (let i = myStringArray.length - 1; i >= 0; i--) {
       inverse.push(myStringArray[i]);
    }
@@ -123,8 +124,16 @@ console.log(invertiStringa('ragionare'));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function inizialiMaiuscole(frase = '') {
+   const myInitialArray = frase.split(" ");
+   const maiuscole = [];
 
+   for (let i = 0; i < myInitialArray.length; i++) {
+      maiuscole.push(myInitialArray[i].slice(0, 1).toUpperCase() 
+      + myInitialArray[i].slice(1));
+   }
+   return maiuscole.join(" ");
 }
+console.log(inizialiMaiuscole('ciao mondo'));
 
 /* ESERCIZIO 9 — togliPrimoEUltimo
    Funzione togliPrimoEUltimo(testo): rimuovi primo e ultimo carattere.
