@@ -154,7 +154,6 @@ function togliPrimoEUltimo(testo = '') {
 console.log(togliPrimoEUltimo('appositamente'));
 
 
-
 /* ESERCIZIO 10 — dammiCasuali
    Funzione dammiCasuali(n): ritorna un array di n numeri interi casuali tra 0 e 10 (inclusi).
    Usa Math.random e Math.floor.
@@ -177,3 +176,12 @@ console.log(dammiCasuali(11));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+function etaGiorni(annoNascita, meseNascita, giornoNascita) {
+   const oggi = new Date(); // recupera la data attuale 
+   const nascita = new Date(annoNascita, meseNascita -1, giornoNascita); 
+   const differenza = oggi - nascita; // differenza in millisecondi
+   const giorni = Math.floor(differenza / (1000 * 60 * 60 * 24)); // arrotonda in giorni interi
+   return `Hai ${giorni} giorni!`
+}
+
+console.log(etaGiorni(2004, 12, 11));
